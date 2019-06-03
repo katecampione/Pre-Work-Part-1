@@ -1,4 +1,4 @@
-/* Global resets */
+* Global resets */
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -25,11 +25,9 @@ h1 {
 }
 
 /* The following font information and color codes are provided for you.  They do not match the prototype exactly, but they are fine to use for the assignment and doing so does not count against you.  They are simply meant to help you save time.  We would like everyone to have as close to a pixel-perfect match to the prototype as possible.  If you do find a font/color that matches more precisely, please share it with the team so we can improve the activity for future applicants.  Thank you!  Happy coding!
-
 	FONTS:
 	font-family: "rooney-sans", Avenir-Book, Calibri, sans-serif;
 	font-family: "rooney-web", "AmericanTypewriter", Rockwell, serif;
-
   COLORS:
   blue: #20A1D4;
   green: #1CBC2C;
@@ -40,3 +38,55 @@ h1 {
 */
 
 /* Your CSS code goes here */
+
+/* Here are a few things I was not able to accomplish in terms of recreating
+the prototype:
+- I did not find the font that was used initially, even with a font-finder. In an
+attempt to at least make the number characters look a bit more like the original,
+I created a span with class name "number-font" which is targeted with the "Calibri"
+font as opposed to the "Avenir-Book" that affects the "mainContainer"; I also gave
+the span element a lower baseline to bring the numbers down to trick the eye
+a bit.
+- I tried modifying both placeholder and value attributes of the input="text"
+so that the dollar sign becomes grey (#777) with "::first-letter" but it was not
+working so then I tried nesting the input box inside another div but that was not
+really following guidelines of being a simple design so I decided against it */
+
+.main-container {
+  text-align: center;
+}
+
+.speech-bubble {
+	padding: 12px 20px 12px 20px;
+	margin: 10px 175px 10px 175px;
+	border-radius: 3px;
+	font-size: .9em;
+	font-weight: 200;
+	background: #424242;
+	color: white;
+	text-align: center;
+	position: relative;
+}
+
+.speech-bubble::after {
+content: '';
+	position: absolute;
+	bottom: 0;
+	left: 87%;
+	width: 0;
+	height: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: solid 7px #424242;
+	border-bottom: 0;
+	margin-left: -7px;
+	margin-bottom: -7px;
+}
+
+.progress-bar {
+	border: 1px solid #eaeaea;
+	margin-top: 20px;
+	display: inline-block;
+	height: 10px;
+	width: 248px;
+}
