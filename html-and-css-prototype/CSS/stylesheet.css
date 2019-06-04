@@ -87,15 +87,13 @@ h1 {
 	height: 100%;
 	display: block;
 	text-align: center;
-
 }
 
 .sub-container {
-border: 1px solid #777;
-width: 249px;
-margin: 0px auto;
-margin-top: 20px;
-
+	border: 1px solid #777;
+	width: 249px;
+	margin: 0px auto;
+	margin-top: 20px;
 }
 
 .orange {
@@ -125,20 +123,20 @@ p {
 }
 
 .dollar-sign {
-    position: relative;
-    display: inline;
-		margin-left: 5px;
+  position: relative;
+  display: inline;
+	margin-left: 5px;
 
 }
 
 .dollar-sign:before {
-    content: '$';
-    position: absolute;
-    top: 0;
-    margin-left: 8px;
-    z-index: 1;
-		color: #777;
-		font-weight: bold;
+  content: '$';
+  position: absolute;
+  top: 0;
+  margin-left: 8px;
+  z-index: 1;
+	color: #777;
+	font-weight: bold;
 
 }
 
