@@ -50,10 +50,10 @@ h1 {
 }
 
 .speech-bubble {
-	padding: 12px 20px 12px 20px;
-	margin: 10px 175px 10px 175px;
+	padding: 12px 30px 12px 30px;
+	margin: 10px 140px 10px 140px;
 	border-radius: 3px;
-	font-size: .9em;
+	font-size: 13px;
 	font-weight: 200;
 	background: #424242;
 	color: white;
@@ -109,7 +109,7 @@ h1 {
 }
 
 p {
-	font-family: "rooney-web", "AmericanTypewriter", Rockwell, serif;
+	font-family: "rooney-sans", Avenir-Book, Calibri, sans-serif;
 	font-size: 12px;
 	color: #777;
 	text-align: left;
@@ -122,9 +122,9 @@ p {
 	margin-right: 10px;
 	border-radius: 3px;
 	border: solid 2px #eaeaea;
-	padding-left: 15px;
+	padding-left: 18px;
 	font-size: 15px;
-	font-weight: 800;
+	font-weight: 700;
 }
 
 .dollar-sign {
@@ -149,19 +149,22 @@ p {
 	height: 40px;
 	border-radius: 3px;
 	font-size: 14px;
-	font-weight: 500;
-	font-family: "rooney-web", "AmericanTypewriter", Rockwell, serif;
+	font-weight: 540;
+	font-family: "rooney-sans", Avenir-Book, Calibri, sans-serif;
 }
 
 .button-container {
 	margin: 15px 0px;
 	display: block;
 	width: 100%;
-	height: 30px;
+	height: 40px;
+	margin-bottom: 7px;
 }
 
 .blue {
 	color: #20A1D4;
+	font-size: 12px;
+	padding-top: 5px;
 }
 
 .save {
