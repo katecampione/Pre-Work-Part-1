@@ -39,18 +39,6 @@ h1 {
 
 /* Your CSS code goes here */
 
-/* Here are a few things I was not able to accomplish in terms of recreating
-the prototype:
-- I did not find the font that was used initially, even with a font-finder. In an
-attempt to at least make the number characters look a bit more like the original,
-I created a span with class name "number-font" which is targeted with the "Calibri"
-font as opposed to the "Avenir-Book" that affects the "mainContainer"; I also gave
-the span element a lower baseline to bring the numbers down to trick the eye
-a bit.
-- I tried modifying both placeholder and value attributes of the input="text"
-so that the dollar sign becomes grey (#777) with "::first-letter" but it was not
-working so then I tried nesting the input box inside another div but that was not
-really following guidelines of being a simple design so I decided against it */
 
 .main-container {
   text-align: center;
@@ -120,28 +108,26 @@ p {
 	margin-left: 20px;
 	margin-right: 15px;
 	text-align: left;
+	
 }
 
 .money-input {
-	height: 30px;
-	width: 85px;
-	margin-right: 5px;
+	height: 34px;
+	width: 80px;
+	margin-right: 10px;
 	border-radius: 5px 5px 5px 5px;
 	border: solid 2px #eaeaea;
-	padding-left: 20px;
+	padding-left: 15px;
 	font-size: 15px;
-	font-weight: bold;
+	font-weight: 800;
 	margin-left: 2px;
 
-
 }
-
 
 .dollar-sign {
     position: relative;
     display: inline;
 		margin-left: 5px;
-
 
 }
 
@@ -149,9 +135,29 @@ p {
     content: '$';
     position: absolute;
     top: 0;
-    margin-left: 5px;
+    margin-left: 8px;
     z-index: 1;
 		color: #777;
 		font-weight: bold;
 
+}
+
+.give-button {
+	background-color: #1CBC2C;
+	color: white;
+	width: 102px;
+	height: 40px;
+	border-radius: 5px 5px 5px 5px;
+	font-size: 14px;
+}
+
+.button-container {
+	display: block;
+	width: 100%;
+	height: 30px;
+	margin-bottom: 15px;
+}
+
+.blue {
+	color: #20A1D4;
 }
